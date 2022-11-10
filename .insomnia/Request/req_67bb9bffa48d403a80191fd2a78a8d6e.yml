@@ -1,0 +1,37 @@
+_id: req_67bb9bffa48d403a80191fd2a78a8d6e
+type: Request
+parentId: wrk_3d8f15c4481e47758fd6a1a14c7bc88c
+modified: 1668071519107
+created: 1668009005381
+url: http://localhost:46001/api/v1/access-tokens
+name: Auth
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "clientId": "16",
+      "domainId": "16",
+      "dataSetLabel": "",
+      "userLogin": "collasf1",
+      "userPassword": "test"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5eef828cb071499c9acd7cb4d956d01c
+  - id: pair_1d6fc2c668044729adec5c547ff22b00
+    name: TokenResponseHeader
+    value: $.body.access_token
+    description: ""
+authentication: {}
+metaSortKey: -1668009005381
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
